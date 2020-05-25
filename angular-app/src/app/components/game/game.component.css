@@ -1,0 +1,149 @@
+.game-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.game-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.player-content {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 40%;
+    background-color: white;
+    padding: 8px;
+    border: 5px;
+    border-radius: 5px;
+}
+
+.verses {
+    color: white;
+    font-size: 36px;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    height: auto;
+    text-align: center;
+}
+
+.verses-text {
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.player-header {
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: white;
+}
+
+.player-title-section {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+}
+
+.player-score-section {
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+.player-header {
+    width: 100%;
+}
+
+.player-header-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.player-header-subtitle {
+    margin-top: -8px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, .54);
+}
+
+.selection-text {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.player-handsigns {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.player-selected-handsign {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.player-selected-handsign img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+}
+
+.player-handsigns-icon {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 33%;
+    background-color: white;
+    padding: 10px;
+}
+
+.computer-handsigns {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.computer-handsigns img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+}
+
+.computer-handsigns-loading mat-spinner {
+    display: block;
+    margin: 0 auto;
+}
+
+.result {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.result-header {
+    font-size: 24px;
+}

@@ -1,0 +1,77 @@
+<div class="game-container">
+    <div fxLayout="row" fxLayoutAlign="space-between">
+        <div class="player-content">
+            <div fxLayout="row" fxLayoutAlign="space-between" class="player-header">
+                <div class="player-title-section">
+                    <div class="player-header-title">
+                        You
+                    </div>
+                    <div class="player-header-subtitle">
+                        World Champion
+                    </div>
+                </div>
+                <div class="player-score-section">
+                    <button mat-fab color="primary" class="score">{{humanScore}}</button>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between" class="selection-text">
+                <p>Make your selection:</p>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between" class="player-handsigns">
+                <div class="player-handsigns-icon"><img src="assets/images/rock.png" class="game-icon" (click)='userPick(0)'></div>
+                <div class="player-handsigns-icon"><img src="assets/images/paper.png" class="game-icon" (click)='userPick(1)'></div>
+                <div class="player-handsigns-icon"><img src="assets/images/scissors.png" class="game-icon" (click)='userPick(2)'></div>
+            </div>
+            <div *ngIf="humanChoice !== -1" fxLayout="row" fxLayoutAlign="space-between" class="player-selected-handsign">
+                <img *ngIf="humanChoice === 0" src="assets/images/rock.png" class="game-icon">
+                <img *ngIf="humanChoice === 1" src="assets/images/paper.png" class="game-icon">
+                <img *ngIf="humanChoice === 2" src="assets/images/scissors.png" class="game-icon">
+            </div>
+        </div>
+        <div class="verses">
+            <div fxflexfill fxlayoutalign="center center" class="verses-text">v</div>
+        </div>
+        <div class="player-content">
+            <div fxLayout="row" fxLayoutAlign="space-between" class="player-header">
+                <div class="player-title-section">
+                    <div class="player-header-title">
+                        Opponent
+                    </div>
+                    <div class="player-header-subtitle">
+                        The challenger
+                    </div>
+                </div>
+                <div class="player-score-section">
+                    <button mat-fab color="accent" class="score">{{computerScore}}</button>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between" class="selection-text">
+                <p>Challengers selection:</p>
+            </div>
+            <div *ngIf="computerChoice !== -1" fxLayout="row" fxLayoutAlign="space-between" class="computer-handsigns">
+                <img *ngIf="computerChoice === 0" src="assets/images/rock.png" class="game-icon">
+                <img *ngIf="computerChoice === 1" src="assets/images/paper.png" class="game-icon">
+                <img *ngIf="computerChoice === 2" src="assets/images/scissors.png" class="game-icon">
+            </div>
+            <div *ngIf="loading" fxLayout="row" fxLayoutAlign="space-between" class="computer-handsigns-loading">
+                <mat-spinner></mat-spinner>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!loading && showResult" fxLayout="column" class="result">
+        <div [ngSwitch]="winner">
+            <ng-template [ngSwitchCase]=1>
+                <p class="result-header">You win!</p>
+            </ng-template>
+            <ng-template [ngSwitchCase]=2>
+                <p class="result-header">You lose!</p>
+            </ng-template>
+            <ng-template [ngSwitchCase]=0>
+                <p class="result-header">Tie!</p>
+            </ng-template>
+            <ng-template ngSwitchDefault></ng-template>
+        </div>
+        <p>Choose again or</p>
+        <button (click)="resetScore()" mat-raised-button color="primary">Reset Score</button>
+    </div>
+</div>
