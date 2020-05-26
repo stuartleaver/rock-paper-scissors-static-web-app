@@ -10,9 +10,7 @@
 }
 
 .player-content {
-    flex: 1 1 100%;
     box-sizing: border-box;
-    max-width: 40%;
     background-color: white;
     padding: 8px;
     border: 5px;
@@ -21,10 +19,9 @@
 
 .verses {
     color: white;
+    padding: 8px;
     font-size: 36px;
-    flex: 1 1 0%;
     box-sizing: border-box;
-    height: auto;
     text-align: center;
 }
 
@@ -107,9 +104,10 @@
 .player-handsigns-icon {
     flex: 1 1 100%;
     box-sizing: border-box;
-    max-width: 33%;
+    max-width: 50%;
     background-color: white;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .computer-handsigns {
