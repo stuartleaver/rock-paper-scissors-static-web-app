@@ -10,6 +10,6 @@ export class ComputerPlayerService {
   constructor(private http: HttpClient) { }
 
   getComputerPlayerChoice(): Observable<any> {
-    return this.http.get<any>('http://localhost:7071/api/rockpaperscissors');
+    return this.http.get<any>('/api/rockpaperscissors');
   }
 }
