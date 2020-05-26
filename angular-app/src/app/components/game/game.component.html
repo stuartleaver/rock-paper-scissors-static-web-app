@@ -1,6 +1,6 @@
 <div class="game-container">
-    <div fxLayout="row" fxLayoutAlign="space-between">
-        <div class="player-content">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between">
+        <div class="player-content" fxFlex="40%" fxFlex.xs="100%">
             <div fxLayout="row" fxLayoutAlign="space-between" class="player-header">
                 <div class="player-title-section">
                     <div class="player-header-title">
@@ -17,7 +17,7 @@
             <div fxLayout="row" fxLayoutAlign="space-between" class="selection-text">
                 <p>Make your selection:</p>
             </div>
-            <div fxLayout="row" fxLayoutAlign="space-between" class="player-handsigns">
+            <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" class="player-handsigns">
                 <div class="player-handsigns-icon"><img src="assets/images/rock.png" class="game-icon" (click)='userPick(0)'></div>
                 <div class="player-handsigns-icon"><img src="assets/images/paper.png" class="game-icon" (click)='userPick(1)'></div>
                 <div class="player-handsigns-icon"><img src="assets/images/scissors.png" class="game-icon" (click)='userPick(2)'></div>
@@ -28,10 +28,10 @@
                 <img *ngIf="humanChoice === 2" src="assets/images/scissors.png" class="game-icon">
             </div>
         </div>
-        <div class="verses">
+        <div class="verses" fxFlex="10%" fxFlex.xs="100%">
             <div fxflexfill fxlayoutalign="center center" class="verses-text">v</div>
         </div>
-        <div class="player-content">
+        <div class="player-content" fxFlex="40%" fxFlex.xs="100%">
             <div fxLayout="row" fxLayoutAlign="space-between" class="player-header">
                 <div class="player-title-section">
                     <div class="player-header-title">
