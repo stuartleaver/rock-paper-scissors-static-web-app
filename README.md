@@ -10,6 +10,9 @@ Rock paper scissors is a hand game usually played between two people, in which e
 ![04-the-game](assets/00-the-game.png)
 
 # Deployment
+
+*Note - If forking this repository, please make sure you have the Azure Static Web App API in your repo's secrets..*
+
 Azure Static Web Apps deploys a full stack web app directly from a GitHub repository.
 
 The following steps (specific to the code in the repo used) is how this can be achieved through the Azure Portal.
