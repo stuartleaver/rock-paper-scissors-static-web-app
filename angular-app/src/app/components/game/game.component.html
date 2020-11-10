@@ -21,11 +21,15 @@
                 <div class="player-handsigns-icon"><img src="assets/images/rock.png" class="game-icon" (click)='userPick(0)'></div>
                 <div class="player-handsigns-icon"><img src="assets/images/paper.png" class="game-icon" (click)='userPick(1)'></div>
                 <div class="player-handsigns-icon"><img src="assets/images/scissors.png" class="game-icon" (click)='userPick(2)'></div>
+                <div class="player-handsigns-icon"><img src="assets/images/lizard.png" class="game-icon" (click)='userPick(3)'></div>
+                <div class="player-handsigns-icon"><img src="assets/images/spock.png" class="game-icon" (click)='userPick(4)'></div>
             </div>
             <div *ngIf="humanChoice !== -1" fxLayout="row" fxLayoutAlign="space-between" class="player-selected-handsign">
                 <img *ngIf="humanChoice === 0" src="assets/images/rock.png" class="game-icon">
                 <img *ngIf="humanChoice === 1" src="assets/images/paper.png" class="game-icon">
                 <img *ngIf="humanChoice === 2" src="assets/images/scissors.png" class="game-icon">
+                <img *ngIf="humanChoice === 3" src="assets/images/lizard.png" class="game-icon">
+                <img *ngIf="humanChoice === 4" src="assets/images/spock.png" class="game-icon">
             </div>
         </div>
         <div class="verses" fxFlex="10%" fxFlex.xs="100%">

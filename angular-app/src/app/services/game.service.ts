@@ -18,7 +18,7 @@ export class GameService {
     } else {
       switch (humanChoice) {
         case Piece.Rock:
-          if (computerChoice == Piece.Scissors) {
+          if (computerChoice == Piece.Scissors || computerChoice == Piece.Lizard) {
             result = Result.Human;
           } else {
             result = Result.Computer;
@@ -26,7 +26,7 @@ export class GameService {
 
           break;
         case Piece.Paper:
-          if (computerChoice == Piece.Rock) {
+          if (computerChoice == Piece.Rock || computerChoice == Piece.Spock) {
             result = Result.Human;
           } else {
             result = Result.Computer;
@@ -34,7 +34,23 @@ export class GameService {
 
           break;
         case Piece.Scissors: 
-          if (computerChoice == Piece.Paper) {
+          if (computerChoice == Piece.Paper || computerChoice == Piece.Lizard) {
+            result = Result.Human;
+          } else {
+            result = Result.Computer;
+          }
+
+          break;
+        case Piece.Lizard: 
+          if (computerChoice == Piece.Paper || computerChoice == Piece.Spock) {
+            result = Result.Human;
+          } else {
+            result = Result.Computer;
+          }
+
+          break;
+        case Piece.Spock: 
+          if (computerChoice == Piece.Scissors || computerChoice == Piece.Rock) {
             result = Result.Human;
           } else {
             result = Result.Computer;
