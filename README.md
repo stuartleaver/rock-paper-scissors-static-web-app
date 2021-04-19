@@ -1,4 +1,4 @@
-# A Rock Paper Scissors game hosted within an Azure Static Web App
+# A Rock Paper Scissors game hosted within an Azure Static Web App that's seems like it's cheating
 
 At Build 2020, Microsoft announced [Static Web Apps](https://azure.microsoft.com/en-gb/services/app-service/static/). Static Web App's allows acceleration of development with a static front fend with the option of using serverless API's as the back end. The serverless API's being Azure Functions.
 
